@@ -25,6 +25,4 @@ cp docker-compose.yaml docker-compose.yaml.bak
 
 sed -i "s/127.0.0.1/$external_ip/g" docker-compose.yaml
 
-sed "s/127.0.0.1/$external_ip/g" docker-compose-slave.yaml
-
 docker-compose -p openvpn-master up -d --build
