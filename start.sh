@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-apt update && apt install curl git -y
+apt update && apt install curl docker docker-compose -y
 read -p "Please selete IP version (4/6): " ip_version
 
 if [ "$ip_version" = "4" ]; then
